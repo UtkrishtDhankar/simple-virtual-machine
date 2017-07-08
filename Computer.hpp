@@ -22,7 +22,7 @@ public:
 	void						Tick();
 
 	Word						PeakAccumulator() const;
-	Word						PeakInstructionPoitner() const;
+	Word						PeakInstructionPointer() const;
 	Word						PeakStatus() const;
 
 	const std::vector<Word>&	PeakRegisters() const;

@@ -47,7 +47,7 @@ Word Computer::PeakAccumulator() const
 	return accumulator;
 }
 
-Word Computer::PeakInstructionPoitner() const
+Word Computer::PeakInstructionPointer() const
 {
 	return instructionPointer;
 }
