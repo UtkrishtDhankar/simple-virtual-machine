@@ -32,6 +32,7 @@ public:
 	void						SetInstructionPointer(Word ip);
 
 	void						SetMemoryAtIndex(Word index, Word val);
+	void						SetRegister(Word id, Word val);
 
 private:
 	std::vector<Word> 			memory;

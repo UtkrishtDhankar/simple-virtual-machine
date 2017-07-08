@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-std=c++14 -Wall -c
 LFLAGS=-std=c++14 -Wall 
 
-OBJS=Computer.o Instruction.o Load.o Store.o Utils.o main.o
+OBJS=Computer.o Instruction.o Load.o Store.o Move.o Utils.o main.o
 
 EXEC=vm
 
@@ -26,6 +26,9 @@ Load.o: Load.cpp Load.hpp Instruction.hpp Utils.hpp
 
 Store.o: Store.cpp Store.hpp Instruction.hpp Utils.hpp
 	$(CC) $(CFLAGS) Store.cpp -o Store.o
+
+Move.o: Move.cpp Move.hpp Instruction.hpp Utils.hpp
+	$(CC) $(CFLAGS) Move.cpp -o Move.o
 
 Utils.o: Utils.cpp Utils.hpp
 	$(CC) $(CFLAGS) Utils.cpp -o Utils.o

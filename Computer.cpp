@@ -82,6 +82,11 @@ void Computer::SetMemoryAtIndex(Word index, Word val)
 	memory[index] = val;
 }
 
+void Computer::SetRegister(Word id, Word val)
+{
+	registers[id] = val;
+}
+
 Word Computer::getNextInstruction() const
 {
 	return memory[instructionPointer + 1];
