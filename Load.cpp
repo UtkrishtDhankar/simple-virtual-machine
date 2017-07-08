@@ -12,7 +12,7 @@ Load::~Load()
 
 void Load::Execute()
 {
-	computer.SetAccumulator(computer.PeakMemory()[memoryLocation]);
+	computer.SetAccumulator(computer.GetMemory()[memoryLocation]);
 }
 
 bool Load::WouldBeValid(Word instructionBits)

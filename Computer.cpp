@@ -42,27 +42,27 @@ void Computer::Tick()
 	instructionPointer++;
 }
 
-Word Computer::PeakAccumulator() const
+Word Computer::GetAccumulator() const
 {
 	return accumulator;
 }
 
-Word Computer::PeakInstructionPointer() const
+Word Computer::GetInstructionPointer() const
 {
 	return instructionPointer;
 }
 
-Word Computer::PeakStatus() const
+Word Computer::GetStatus() const
 {
 	return statusRegister;
 }
 
-const std::vector<Word>& Computer::PeakRegisters() const
+const std::vector<Word>& Computer::GetRegisters() const
 {
 	return registers;
 }
 
-const std::vector<Word>& Computer::PeakMemory() const
+const std::vector<Word>& Computer::GetMemory() const
 {
 	return memory;
 }

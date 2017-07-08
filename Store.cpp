@@ -12,7 +12,7 @@ Store::~Store()
 
 void Store::Execute()
 {
-	computer.SetMemoryAtIndex(memoryLocation, computer.PeakAccumulator());
+	computer.SetMemoryAtIndex(memoryLocation, computer.GetAccumulator());
 }
 
 bool Store::WouldBeValid(Word instructionBits)

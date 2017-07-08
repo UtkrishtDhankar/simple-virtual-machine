@@ -7,12 +7,12 @@ using namespace vm;
 
 void PrintRegisters(const Computer& computer)
 {
-	for (auto reg : computer.PeakRegisters()) {
+	for (auto reg : computer.GetRegisters()) {
 		std::cout << "gpr: " << reg << ", ";
 	}
 
-	std::cout << "\nacc: " << computer.PeakAccumulator();
-	std::cout << "\nip : " << computer.PeakInstructionPointer() << std::endl;
+	std::cout << "\nacc: " << computer.GetAccumulator();
+	std::cout << "\nip : " << computer.GetInstructionPointer() << std::endl;
 }
 
 int main()

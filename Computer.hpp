@@ -21,12 +21,12 @@ public:
 
 	void						Tick();
 
-	Word						PeakAccumulator() const;
-	Word						PeakInstructionPointer() const;
-	Word						PeakStatus() const;
+	Word						GetAccumulator() const;
+	Word						GetInstructionPointer() const;
+	Word						GetStatus() const;
 
-	const std::vector<Word>&	PeakRegisters() const;
-	const std::vector<Word>&	PeakMemory() const;
+	const std::vector<Word>&	GetRegisters() const;
+	const std::vector<Word>&	GetMemory() const;
 
 	void						SetAccumulator(Word acc);
 	void						SetInstructionPointer(Word ip);

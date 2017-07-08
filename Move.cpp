@@ -8,9 +8,9 @@ namespace vm
 Move::~Move()
 {
 	if (mode == Mode::ToRegister) {
-		computer.SetRegister(registerId, computer.PeakAccumulator());
+		computer.SetRegister(registerId, computer.GetAccumulator());
 	} else {
-		computer.SetAccumulator(computer.PeakRegisters()[registerId]);
+		computer.SetAccumulator(computer.GetRegisters()[registerId]);
 	}
 }
 
