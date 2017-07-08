@@ -32,14 +32,14 @@ void Computer::SetMemory(const std::vector<Word>& newMemory)
 
 void Computer::Tick()
 {
-	instructionPointer++;
-
 	// Get the next instruction from memory
 	Word instructionBits = memory[instructionPointer];
 	std::unique_ptr<Instruction> instruction
 		= Instruction::MakeInstruction(*this, instructionBits);
 
 	instruction->Execute();
+
+	instructionPointer++;
 }
 
 Word Computer::PeakAccumulator() const
